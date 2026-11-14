@@ -15,7 +15,7 @@ for(let i: number = 1; i<=5; i++)
     console.log(i);
 }
 
-function double(value){
+function double(value: number){
     return value * 2;
 }
-console.log(double(10))
+console.log(double(10));
