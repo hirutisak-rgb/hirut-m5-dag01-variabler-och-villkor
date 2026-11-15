@@ -69,6 +69,18 @@ if(isStudent)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
 
+let veckodag: string = "lördag";
+let klockslag: number = 15;
+let arHelg: boolean = veckodag === "lördag" || veckodag === "söndag";
+let oppetJustNu: boolean;
+
+if (arHelg) {
+    oppetJustNu = 9 <= klockslag && klockslag <= 16;
+} else {
+    oppetJustNu = 7 <= klockslag && klockslag <= 18;
+}
+
+console.log("Öppet just nu: " + (oppetJustNu ? "ja" : "nej"));
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
