@@ -6,7 +6,8 @@ import "./kalibrering";
 
 // STEG 1 ------------------------------------------------------------
 // TODO: skriv ut texten "Hej från Kafé Kardemumma" med console.log
-
+    let text: string = "Hej från Kafé Kardemumma";
+    console.log(text);
 
 // STEG 2 ------------------------------------------------------------
 // TODO: skapa konstanten kafeNamn (string) med värdet "Kafé Kardemumma"
@@ -14,6 +15,14 @@ import "./kalibrering";
 // TODO: skapa variablerna antalBullar (2) och antalKaffe (1) med let, båda number
 // TODO: skriv ut kafeNamn
 //       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
+    const kafeNamn: string = "Kafé Kardemumma";
+    const prisBulle: number = 35;
+    const prisKaffe: number = 32;
+    let antalBullar: number = 2;
+    let antalKaffe: number = 1;
+    console.log(kafeNamn);
+    console.log(antalBullar);
+    console.log(antalKaffe);
 
 
 // STEG 3 ------------------------------------------------------------
@@ -21,7 +30,20 @@ import "./kalibrering";
 //       Typerna heter string, number, boolean, undefined och null
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+//Typen styring
+let namn: string = "Hirut";
+//Typen number
+let tal: number = 35;
+//Typen boolean
+let sant: boolean = true;
+//Ingen type
+let x: undefined;
+//typen tom
+let tom: null = null;
+console.log(typeof("Hirut"));
+console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
 
+tal = 40;
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
