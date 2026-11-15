@@ -41,9 +41,6 @@ let x: undefined;
 //typen tom
 let tom: null = null;
 console.log(typeof("Hirut"));
-console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
-
-tal = 40;
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
@@ -51,13 +48,22 @@ tal = 40;
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
+console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
 
+tal = 40;
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
 
-
+let isStudent: boolean = true;
+let attBetala: number = prisBulle * antalBullar + prisKaffe * antalKaffe;
+if(isStudent)
+{
+    console.log("Att betala:" + (attBetala * 0.9));
+}else{
+    console.log("Att betala:" + attBetala);
+}
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
