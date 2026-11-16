@@ -40,7 +40,12 @@ let sant: boolean = true;
 let x: undefined;
 //typen tom
 let tom: null = null;
+
 console.log(typeof("Hirut"));
+
+console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
+
+/*tal = "test"; //Error: Type 'string' is not assignable to type 'number'.*/
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
@@ -48,9 +53,12 @@ console.log(typeof("Hirut"));
 // TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
 //       Moms ska ha två decimaler (toFixed(2))
 //       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
-console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
 
-tal = 40;
+let summa: number = antalBullar * prisBulle + antalKaffe * prisKaffe;
+let momsDel: number = summa * 0.12 / 1.12;
+
+console.log("Summa:" + summa + " kr");
+console.log("Varav moms (12 %): " + momsDel.toFixed(2) + " kr");
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
