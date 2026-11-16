@@ -43,7 +43,7 @@ let tom: null = null;
 
 console.log(typeof("Hirut"));
 
-console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
+console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof tom);
 
 /*tal = "test"; //Error: Type 'string' is not assignable to type 'number'.*/
 
@@ -57,7 +57,7 @@ console.log(typeof namn, typeof tal, typeof sant, typeof x, typeof null);
 let summa: number = antalBullar * prisBulle + antalKaffe * prisKaffe;
 let momsDel: number = summa * 0.12 / 1.12;
 
-console.log("Summa:" + summa + " kr");
+console.log("Summa: " + summa + " kr");
 console.log("Varav moms (12 %): " + momsDel.toFixed(2) + " kr");
 
 // STEG 5 ------------------------------------------------------------
@@ -66,9 +66,10 @@ console.log("Varav moms (12 %): " + momsDel.toFixed(2) + " kr");
 
 let isStudent: boolean = true;
 let attBetala: number = prisBulle * antalBullar + prisKaffe * antalKaffe;
+let attBetalamedRabbat = attBetala * 0.9;
 if(isStudent)
 {
-    console.log("Att betala:" + (attBetala * 0.9));
+    console.log("Att betala:" + attBetalamedRabbat);
 }else{
     console.log("Att betala:" + attBetala);
 }
