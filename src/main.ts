@@ -66,12 +66,12 @@ console.log("Varav moms (12 %): " + momsDel.toFixed(2) + " kr");
 
 let isStudent: boolean = true;
 let attBetala: number = prisBulle * antalBullar + prisKaffe * antalKaffe;
-let attBetalamedRabbat = attBetala * 0.9;
+let attBetalamedRabatt = attBetala * 0.9;
 if(isStudent)
 {
-    console.log("Att betala:" + attBetalamedRabbat);
+    console.log("Att betala: " + attBetalamedRabatt);
 }else{
-    console.log("Att betala:" + attBetala);
+    console.log("Att betala: " + attBetala);
 }
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
@@ -93,3 +93,7 @@ console.log("Öppet just nu: " + (oppetJustNu ? "ja" : "nej"));
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
+// lördag 8  = nej (helg öppnar 9)
+// lördag 15 = ja
+// måndag 6  = nej (vardag öppnar 7)
+// måndag 17 = ja
